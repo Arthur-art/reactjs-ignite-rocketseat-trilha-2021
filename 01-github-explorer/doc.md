@@ -8,3 +8,7 @@
 
 # Convertendo jsx do react com babel
 - yarn add @babel/preset-react -D
+
+# Configurando Webpack
+- yarn add webpack webpack-cli -D
+- yarn add babel-loader -D

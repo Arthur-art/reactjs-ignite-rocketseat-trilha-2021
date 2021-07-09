@@ -6,10 +6,10 @@
 - Rodando um arquivo js com babel
   - yarn babel src/index.js --out-file dist/bundle.js
 
-# Convertendo jsx do react com babel
+# Convertendo jsx do react com babel para que o browser possa entender react
 - yarn add @babel/preset-react -D
 
-# Configurando Webpack
+# Configurando Webpack para que o browser ententenda pacotes como scss, html in js
 - yarn add webpack webpack-cli -D
 - yarn add babel-loader -D
 - yarn add html-webpack-plugin -D

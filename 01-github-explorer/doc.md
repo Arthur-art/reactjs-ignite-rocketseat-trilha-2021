@@ -14,5 +14,8 @@
 - yarn add babel-loader -D
 - yarn add html-webpack-plugin -D
 - yarn add webpack-dev-server -D
-- Executando Webpack
+- Executando Webpacks
   - yarn webpack serve
+
+# Utilizando variaveis de ambiente trabalhando com cross-env
+- yarn add cross-env -D

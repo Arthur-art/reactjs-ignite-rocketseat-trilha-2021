@@ -22,3 +22,7 @@
 
 # Instalando recursos para o webpack entender css
 - yarn add style-loader css-loader -D
+
+# Trabalhando com SASS
+- yarn add sass-loader -D
+- yarn add node-sass -D

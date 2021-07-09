@@ -13,3 +13,6 @@
 - yarn add webpack webpack-cli -D
 - yarn add babel-loader -D
 - yarn add html-webpack-plugin -D
+- yarn add webpack-dev-server -D
+- Executando Webpack
+  - yarn webpack serve

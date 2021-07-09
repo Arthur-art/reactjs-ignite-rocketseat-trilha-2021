@@ -19,3 +19,6 @@
 
 # Utilizando variaveis de ambiente trabalhando com cross-env
 - yarn add cross-env -D
+
+# Instalando recursos para o webpack entender css
+- yarn add style-loader css-loader -D

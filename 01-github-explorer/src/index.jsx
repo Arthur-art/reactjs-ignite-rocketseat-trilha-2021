@@ -1,9 +1,9 @@
 import React from "react"
 import {render} from "react-dom"
-import { App } from "./components/App"
+import { RepositoryList } from "./components/RepositoryList"
 
 render(
-    <App />,
+    <RepositoryList />,
     document.getElementById("root")
 )
 

@@ -1,15 +1,27 @@
 import React from 'react'
 import { Counter } from '../Counter';
 
-export const RepositoryItem = ({dataRepository}) => {
-    const {name, url, description} = dataRepository;
+export const RepositoryItem = ({ data }) => {
+
+    const dataProps = []
+    for (let i in data) {
+        dataProps.push(data[i])
+    }
 
     return (
-        <li>
-            <strong>{name ? name : "Carregando..."}</strong>
-            <p>{description}</p>
-            <a href={url}>Acessar repositorio no github</a>
-            <Counter/>
-        </li>
+        <>
+            <div>
+                {
+                    dataProps.map((value) => {
+                        return <li>
+                            <strong>{value.full_name} {"=>"} </strong>
+                            <a href={value.clone_url}>Acessar repositorio no github</a>
+                        </li>
+                    })
+                }
+
+            </div>
+        </>
+
     )
 }

@@ -26,3 +26,6 @@
 # Trabalhando com SASS
 - yarn add sass-loader -D
 - yarn add node-sass -D
+
+# Trabalhando com react-refresh
+- yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh

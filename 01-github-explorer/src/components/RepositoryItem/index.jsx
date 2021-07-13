@@ -11,14 +11,14 @@ export const RepositoryItem = ({ data }) => {
     return (
         <>
             <div>
-                {
-                    dataProps.map((value) => {
-                        return <li>
+                {data ?
+                    dataProps.map((value, i) => {
+                        return <li key={i}>
                             <strong>{value.full_name} {"=>"} </strong>
                             <a href={value.clone_url}>Acessar repositorio no github</a>
                         </li>
                     })
-                }
+               : "Carregando..." }
 
             </div>
         </>

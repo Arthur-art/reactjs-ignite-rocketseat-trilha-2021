@@ -29,3 +29,10 @@
 
 # Trabalhando com react-refresh
 - yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh
+
+# Trabalhando com TypeScript
+- yarn add typescript -D
+- tsc --init
+- yarn add @babel/preset-typescript -D
+- yarn add @types/react-dom -D
+- yarn add @types/react -D

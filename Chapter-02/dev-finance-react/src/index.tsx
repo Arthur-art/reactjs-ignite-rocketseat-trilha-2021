@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 import { createServer } from "miragejs"
-
 createServer({
-  routes(){
+  routes() {
     this.namespace = "api"
 
-    this.get("/transactions", ()=>{
+    this.get("/transactions", () => {
       return [
         {
           response: "Resposta da api"
@@ -18,9 +17,11 @@ createServer({
 })
 
 
+
+
 ReactDOM.render(
   <>
-    <App />
+    <App  />
   </>,
   document.getElementById('root')
 );

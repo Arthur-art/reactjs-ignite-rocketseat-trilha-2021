@@ -3,10 +3,10 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyle = createGlobalStyle`
 
 :root{
-    --background: #f0f2f5;
+    --background: #4b4b4b;
     --red: #c0392b;
     --roxo: #8e44ad;
-    --blueLight: #3498db;
+    --black: #2f3640;
     --textBody: #bdc3c7;
     --textTitle: #7f8c8d;
 }
@@ -27,7 +27,7 @@ html{
 }
 
 body {
-    background: var(---background);
+    background: var(--background);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -50,4 +50,4 @@ button {
 }
 
 
-`;
+`

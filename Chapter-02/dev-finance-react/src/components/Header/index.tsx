@@ -14,6 +14,8 @@ const customStyles = {
     },
 };
 
+Modal.setAppElement('#root');
+
 export const Header = () => {
     const [modalTransaction, setModalTransaction] = useState(false)
     let subtitle:any;

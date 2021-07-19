@@ -1,6 +1,7 @@
 
 import Modal from 'react-modal';
 import { Container } from './style';
+import closeImg from "../../assets/close.svg"
 
 export const NewTransactionModal = ({
     modalTransaction,
@@ -15,6 +16,9 @@ export const NewTransactionModal = ({
                 overlayClassName={"react-modal-overlay"}
                 className={"react-modal-content"}
             >
+                <button className="button-close-modal" onClick={handleModalClose}>
+                    <img src={closeImg} alt="Fechar modal" />
+                </button>
                 <Container>
                     <h2>Cadastrar transação</h2>
 

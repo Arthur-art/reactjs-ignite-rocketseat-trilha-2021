@@ -5,5 +5,8 @@
 - yarn add styled-components
 - yarn add @types/styled-components -D
 
-# Trabalhando com MirageJS
+# Trabalhando com MirageJS para simular um consumo de api sem backend
 - yarn add miragejs
+
+# Trabalhando com Axios para requisicoes http
+- yarn add axios

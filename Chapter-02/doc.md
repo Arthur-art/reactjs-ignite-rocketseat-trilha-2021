@@ -4,3 +4,6 @@
 # Trabalhando com css in js
 - yarn add styled-components
 - yarn add @types/styled-components -D
+
+# Trabalhando com MirageJS
+- yarn add miragejs

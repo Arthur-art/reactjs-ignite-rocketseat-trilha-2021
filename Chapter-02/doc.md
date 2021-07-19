@@ -13,3 +13,6 @@
   
 # Trabalhando com lib react-modal
 - yarn add react-modal
+
+# Trabalhando com pacote polished
+- yarn add polished

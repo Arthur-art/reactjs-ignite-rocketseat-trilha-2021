@@ -10,3 +10,6 @@
 
 # Trabalhando com Axios para requisicoes http
 - yarn add axios
+  
+# Trabalhando com lib react-modal
+- yarn add react-modal

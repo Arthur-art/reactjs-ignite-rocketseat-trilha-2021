@@ -1,14 +1,15 @@
 
+import { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import { Container, TransactionTypeContainer } from './style';
 import closeImg from "../../assets/close.svg"
 import incomeImg from "../../assets/income.svg"
 import outcomeImg from "../../assets/outcome.svg"
 
-export const NewTransactionModal = ({
-    modalTransaction,
-    afterOpenModal,
-    handleModalClose, }) => {
+export const NewTransactionModal = ({ modalTransaction, afterOpenModal, handleModalClose, }) => {
+
+    const [type, setType] = useState("deposit")
+
     return (
         <div>
             <Modal
@@ -29,12 +30,12 @@ export const NewTransactionModal = ({
                     <input type="number" placeholder="Valor" />
 
                     <TransactionTypeContainer>
-                        <button>
-                            <img src={incomeImg} alt="" />
+                        <button onClick={() => setType("deposit")}>
+                            <img src={incomeImg} alt="entrada-img" />
                             Entrada
                         </button>
-                        <button>
-                            <img src={outcomeImg} alt="" />
+                        <button onClick={() => setType("withdraw")}>
+                            <img src={outcomeImg} alt="saida-img" />
                             Saída
                         </button>
                     </TransactionTypeContainer>

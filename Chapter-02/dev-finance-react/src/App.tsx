@@ -6,22 +6,11 @@ import Modal from 'react-modal';
 import { NewTransactionModal } from "./components/NewTransactionModal"
 
 
-export function App() {
-  const customStyles = {
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-    },
-  };
+export const App = () => {
 
   Modal.setAppElement('#root');
 
   const [modalTransaction, setModalTransaction] = useState(false)
-  let subtitle: any;
 
   const handleModalOpen = () => {
     setModalTransaction(true)
@@ -43,7 +32,6 @@ export function App() {
         afterOpenModal={afterOpenModal}
         handleModalClose={handleModalClose}
         modalTransaction={modalTransaction}
-        customStyles={customStyles}
       />
     </>
   );

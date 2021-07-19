@@ -18,7 +18,7 @@ export const Container = styled.div`
             border:0;
             padding: 1rem 2rem;
             background: #c8d6e5;
-            border-radius: 0.25rem;
+            border-radius: 0 0 0 0.25rem;
 
             &.deposit{
                 color:var(--green);

@@ -39,11 +39,15 @@ button[type="submit"]{
 `;
 
 export const TransactionTypeContainer = styled.div`
-
 display: flex;
+`;
 
-    button{
-        background: var(--black);
+interface RadioBoxProps {
+    active:boolean;
+}
+
+export const RadioBox = styled.button<RadioBoxProps>`
+        background: ${({active})=> active ? "#ccc" : "transparent"};
         border: 0;
         border-radius: 0.25rem;
         height: 3rem;
@@ -59,5 +63,5 @@ display: flex;
             transition: 0.10s;
             border-color: ${darken(0.5, "#2f3640")}
         }
-    }
+    
 `;

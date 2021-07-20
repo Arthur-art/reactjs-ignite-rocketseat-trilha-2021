@@ -6,8 +6,8 @@ import { TransactionsContext } from "../../TransactionsContext"
 
 
 export const Summary = () => {
-    const data = useContext(TransactionsContext)
-    console.log(data)
+    
+    const transactions = useContext(TransactionsContext)
 
     return (
         <Container>

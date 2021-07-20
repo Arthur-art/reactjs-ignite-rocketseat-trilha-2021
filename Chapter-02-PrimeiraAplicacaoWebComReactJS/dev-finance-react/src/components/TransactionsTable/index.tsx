@@ -20,7 +20,7 @@ export const TransactionsTable = () => {
             setTransactions(response.data.transactions)
         })
     }, [])
-    
+
     return (
         <Container>
             <table>
@@ -38,8 +38,13 @@ export const TransactionsTable = () => {
                             <tr key={value.id}>
                                 <td>{value.title}</td>
                                 <td className={value.type}>{value.type}</td>
-                                <td>{value.amount}</td>
+                                <td>{new Intl.NumberFormat('pt-BR', {
+                                    style: 'currency',
+                                    currency: 'BRL'
+                                }).format(value.amount)}</td>
                                 <td>{value.category}</td>
+                                <td>{new Intl.DateTimeFormat('pt-BR')
+                                    .format(new Date(value.createdAt))}</td>
                             </tr>
                         </>
                     }) : "Carregando..."}

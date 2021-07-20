@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { GlobalStyle } from './styles/global';
 import Modal from 'react-modal';
 import { NewTransactionModal } from "./components/NewTransactionModal"
+import { TransactionsContext } from './TransactionsContext'
 
 
 export const App = () => {
@@ -24,7 +25,7 @@ export const App = () => {
     setModalTransaction(false)
   }
   return (
-    <>
+    <TransactionsContext.Provider value={["useContext"]}>
       <GlobalStyle />
       <Header handleModalOpen={handleModalOpen} />
       <Dashboard />
@@ -33,6 +34,6 @@ export const App = () => {
         handleModalClose={handleModalClose}
         modalTransaction={modalTransaction}
       />
-    </>
+    </TransactionsContext.Provider>
   );
 }

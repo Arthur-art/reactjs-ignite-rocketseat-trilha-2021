@@ -30,11 +30,11 @@ export const NewTransactionModal = ({ modalTransaction, afterOpenModal, handleMo
                     <input type="number" placeholder="Valor" />
 
                     <TransactionTypeContainer>
-                        <RadioBox active={type === 'deposit'} onClick={() => setType("deposit")}>
+                        <RadioBox activeColor={"green"} active={type === 'deposit'} onClick={() => setType("deposit")}>
                             <img src={incomeImg} alt="entrada-img" />
                             Entrada
                         </RadioBox>
-                        <RadioBox active={type === 'withdraw'} onClick={() => setType("withdraw")}>
+                        <RadioBox activeColor={"red"} active={type === 'withdraw'} onClick={() => setType("withdraw")}>
                             <img src={outcomeImg} alt="saida-img" />
                             Saída
                         </RadioBox>

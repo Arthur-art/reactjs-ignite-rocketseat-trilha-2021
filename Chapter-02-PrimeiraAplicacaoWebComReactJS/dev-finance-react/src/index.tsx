@@ -15,7 +15,7 @@ createServer({
           title: 'Freelancer de websistem',
           type: 'deposit',
           category: 'dev',
-          amount: 1100,
+          valueMoney: 1100,
           createdAt: new Date('2021-02-12 09:00:00'),
         },
         {
@@ -23,7 +23,7 @@ createServer({
           title: 'Freelancer de websistem',
           type: 'deposit',
           category: 'dev',
-          amount: 300,
+          valueMoney: 300,
           createdAt: new Date('2021-02-21 21:00:00'),
         }
       ]

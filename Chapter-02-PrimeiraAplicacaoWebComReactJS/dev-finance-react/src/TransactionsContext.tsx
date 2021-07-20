@@ -6,7 +6,7 @@ interface TransactionsRequest {
     title: string;
     type: string;
     category: string;
-    amount: number;
+    valueMoney: number;
     createdAt: string;
 }
 
@@ -23,7 +23,7 @@ interface TransactionInput {
 
 interface TransactionContextData {
     transaction: TransactionsRequest[];
-    createTransaction: (transaction: TransactionInput) => void;
+    createTransaction: (transaction: TransactionInput) => Promise<void>;
 }
 
 export const TransactionsContext = createContext<TransactionContextData>({} as TransactionContextData)
@@ -38,8 +38,13 @@ export const TransactionsProvider = (props: TransactionsProvider) => {
         })
     }, [])
 
-    const createTransaction = (transaction: TransactionInput) => {
-        api.post("/transactions", transaction);
+    const createTransaction = async (transactionInput: TransactionInput) => {
+        const response = await api.post("/transactions", {
+            ...transactionInput,
+            createdAt: new Date(),
+        });
+        const { transactions } = response.data;
+        setTransactions((prev) => ([...prev, transactions]))
     }
 
     return (

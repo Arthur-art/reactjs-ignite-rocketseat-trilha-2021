@@ -26,7 +26,7 @@ export const TransactionsTable = () => {
                                 <td>{new Intl.NumberFormat('pt-BR', {
                                     style: 'currency',
                                     currency: 'BRL'
-                                }).format(value.amount)}</td>
+                                }).format(value.valueMoney)}</td>
                                 <td>{value.category}</td>
                                 <td>{new Intl.DateTimeFormat('pt-BR')
                                     .format(new Date(value.createdAt))}</td>

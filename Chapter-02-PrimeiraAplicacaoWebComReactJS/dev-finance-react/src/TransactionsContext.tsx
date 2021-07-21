@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useEffect, useState } from 'react'
 import { api } from './services/api'
 
-interface TransactionsRequest {
+export interface TransactionsRequest {
     id: number;
     title: string;
     type: string;

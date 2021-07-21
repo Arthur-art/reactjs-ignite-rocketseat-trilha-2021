@@ -25,6 +25,14 @@ createServer({
           category: 'dev',
           valueMoney: 300,
           createdAt: new Date('2021-02-21 21:00:00'),
+        },
+        {
+          id: 3,
+          title: 'Games',
+          type: 'withdraw',
+          category: 'games',
+          valueMoney: -400,
+          createdAt: new Date('2021-02-21 21:00:00'),
         }
       ]
     })

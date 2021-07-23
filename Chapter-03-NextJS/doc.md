@@ -3,3 +3,6 @@
 
 # Instalando typescript
 - yarn add typescript @types/react @types/node -D
+
+# Instalando SASS
+- yarn add sass

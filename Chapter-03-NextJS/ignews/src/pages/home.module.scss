@@ -26,13 +26,16 @@
         }
     }
 
-    p{
+    p {
         font-size: 1.5rem;
         line-height: 2.25rem;
         margin-top: 1.5rem;
-        span{
+        span {
             color: var(--cyan-500);
             font-weight: bold;
+        }
+        button {
+            margin-top: 2.5rem;
         }
     }
 }

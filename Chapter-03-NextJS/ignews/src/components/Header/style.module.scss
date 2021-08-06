@@ -27,7 +27,7 @@
                 color: var(--white);
             }
 
-            &.active{
+            &.active {
                 font-weight: bold;
             }
 
@@ -42,5 +42,9 @@
                 background: var(--yellow-500);
             }
         }
+    }
+
+    button {
+        margin-left: auto;
     }
 }

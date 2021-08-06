@@ -6,3 +6,6 @@
 
 # Instalando SASS
 - yarn add sass
+
+# Trabalhando com pacote react-icons
+- yarn add react-icons

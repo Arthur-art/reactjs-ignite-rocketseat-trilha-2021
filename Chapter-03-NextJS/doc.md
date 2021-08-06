@@ -12,6 +12,7 @@
   
 # Trabalhando com plataforma da stripe
 - https://dashboard.stripe.com/test/developers
+- yarn add stripe
 
     # Passo a passo stripe
     - Entrar no modo desenvolvedor

@@ -18,3 +18,7 @@
     - Entrar no modo desenvolvedor
     - Criar um produto ficticio
     - Aba Developers -> Api keys -> Copiar Secret Key
+
+# Trabalhando com next-auth
+- yarn add next-auth
+- https://next-auth.js.org/getting-started/example

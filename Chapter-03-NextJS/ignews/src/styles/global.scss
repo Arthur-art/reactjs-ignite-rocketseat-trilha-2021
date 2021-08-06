@@ -8,6 +8,7 @@
     --white: #ffffff;
     --gray-300: #cbd5e0;
     --gray-900: #171923;
+    --gray-800: #1a202c;
     --cyan-500: #00b5d8;
     --yellow-500: #d69e2e;
 }
@@ -44,4 +45,5 @@ button {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }

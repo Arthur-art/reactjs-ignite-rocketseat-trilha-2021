@@ -22,3 +22,12 @@
 # Trabalhando com next-auth
 - yarn add next-auth
 - https://next-auth.js.org/getting-started/example
+
+# Trabalhando com FaunaDB
+- yarn add faunadb
+- https://dashboard.fauna.com/?first_session=true
+- Criando um banco de dados
+- Configurar API Key em Security
+- Criar collections
+- Criar indexes para select no banco
+- Acessando o fauna db com sdk do fauna no arquivo fauna.ts

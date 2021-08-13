@@ -31,3 +31,9 @@
 - Criar collections
 - Criar indexes para select no banco
 - Acessando o fauna db com sdk do fauna no arquivo fauna.ts
+
+# Trabalhando com axios
+- yarn add axios
+
+# Trabalhando com lib do stripe para operações feitas no front
+- yarn add @stripe/stripe-js

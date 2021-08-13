@@ -7,7 +7,6 @@ import { signIn, signOut, useSession } from "next-auth/client"
 export function SignInButton() {
 
     const [session] = useSession()
-    console.log(session)
 
     return (
         <>

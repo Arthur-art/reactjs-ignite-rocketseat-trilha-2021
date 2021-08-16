@@ -37,3 +37,11 @@
 
 # Trabalhando com lib do stripe para operações feitas no front
 - yarn add @stripe/stripe-js
+  
+# Configurando stripe-cli
+- https://stripe.com/docs/stripe-cli#install
+- Adicionar ao package.json:
+```json
+"stripe": "stripe-cli/stripe listen  --forward-to localhost:3000/api/webhooks"
+ ```
+- yarn stripe

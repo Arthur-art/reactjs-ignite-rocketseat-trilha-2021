@@ -45,3 +45,29 @@
 "stripe": "stripe-cli/stripe listen  --forward-to localhost:3000/api/webhooks"
  ```
 - yarn stripe
+
+# JAM STACK
+
+# CMS (Content Management System)
+
+- Wordpress
+x Drupal
+x Joomla
+x Magento (E-commerce)
+  
+# Headless CMS (Painel de administração + API HTTP, GraphQL, SDK)
+
+- Strapi
+- Ghost  (Blog)
+- Keystone
+
+- GraphCMS
+- Prismic CMS
+- Contentful
+
+(E-commerce)
+- Shopfy 
+- Saleor
+
+# Trabalhando com Prismic
+- https://prismic.io/

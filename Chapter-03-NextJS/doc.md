@@ -70,4 +70,6 @@ x Magento (E-commerce)
 - Saleor
 
 # Trabalhando com Prismic
-- https://prismic.io/
+- https://prismic.io
+- https://prismic.io/docs
+- yarn add @prismicio/client

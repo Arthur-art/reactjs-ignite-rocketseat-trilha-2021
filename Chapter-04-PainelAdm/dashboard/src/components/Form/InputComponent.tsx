@@ -13,7 +13,8 @@ export function InputComponent({ name, label, ...res }: Props) {
             <FormControl>
                 {/**Adicionando Label para referenciar os inputs */}
                 {label && < FormLabel htmlFor={name} >{label}</ FormLabel >}
-                <Input name={name} {...res} id={name} />
+                {/**Cores no padrão do chakra Exe.: gray.900 */}
+                <Input focusBorderColor={"gray.900"} bg={"gray.900"} name={name} {...res} id={name} />
             </FormControl>
         </>
     )

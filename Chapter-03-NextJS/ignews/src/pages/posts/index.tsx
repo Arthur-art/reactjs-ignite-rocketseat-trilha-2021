@@ -3,6 +3,7 @@ import Head from "next/head";
 import { getPrismiClient } from "../../service/prismic";
 import style from "./style.module.scss"
 import Prismic from "@prismicio/client"
+import { RichText } from "prismic-dom"
 
 export default function Posts() {
 
@@ -48,7 +49,16 @@ export const getStaticProps: GetStaticProps = async () => {
         pageSize: 100,
     })
 
-    console.log(JSON.stringify(response, null, 2))
+    console.log("JSON => ",JSON.stringify(response.results, null, 2))
+
+    const posts = response.results.map((post) => {
+        return {
+            slug: post.id,
+            title: RichText.asText(post.data.title)
+        }
+    })
+
+    console.log("posts => ", response)
 
     return {
         props: {}

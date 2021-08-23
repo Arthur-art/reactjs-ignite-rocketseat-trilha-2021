@@ -73,3 +73,7 @@ x Magento (E-commerce)
 - https://prismic.io
 - https://prismic.io/docs
 - yarn add @prismicio/client
+
+# Trabalhando com prismic-dom para converter retorno do prismic
+- yarn add prismic-dom 
+- yarn add @types/prismic-dom

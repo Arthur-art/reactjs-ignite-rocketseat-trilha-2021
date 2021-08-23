@@ -1,7 +1,8 @@
-import { Button, Flex, FormLabel, Input, Stack } from "@chakra-ui/react"
+import { Button, Flex, Stack } from "@chakra-ui/react"
+import { InputComponent } from "../components/Form/InputComponent"
 
 
-export default function Home() {
+export default function SigIn() {
   return (
     // Utilizando component Flex do chakra, que funciona como uma div com display:flex por default
     <Flex w={"100vw"} h={"100vh"} alignItems={"center"} justifyContent={"center"}>
@@ -10,16 +11,9 @@ export default function Home() {
         {/**Component Stack para adicionar espaçamentos nos elementos */}
         <Stack spacing="4">
 
-          <div>
-            {/**Adicionando Label para referenciar os inputs */}
-            <FormLabel htmlFor="email">E-mail</FormLabel>
-            <Input name="email" id="email" type="email" />
-          </div>
+          <InputComponent name={"email"} type="email" label={"E-mail"} />
 
-          <div>
-            <FormLabel htmlFor="password">Password</FormLabel>
-            <Input name="password" id="password" type="password" />
-          </div>
+          <InputComponent name={"password"} type="email" label={"Password"} />
 
         </Stack>
         <Button type="submit" mt="6" colorScheme="blackAlpha">Entrar</Button>

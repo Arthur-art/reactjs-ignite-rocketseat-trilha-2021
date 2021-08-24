@@ -13,7 +13,7 @@ export default function SigIn() {
 
           <InputComponent name={"email"} type="email" label={"E-mail"} />
 
-          <InputComponent name={"password"} type="email" label={"Password"} />
+          <InputComponent name={"password"} type="password" label={"Password"} />
 
         </Stack>
         <Button type="submit" mt="6" colorScheme="blackAlpha">Entrar</Button>

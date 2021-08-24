@@ -7,3 +7,6 @@
 - Importações no chakra para react sempre from @chakra-ui/react
 
 # Configurando fonts no next com _document.tsx
+
+# Trabalhando com lib react-icons
+- yarn add react-icons

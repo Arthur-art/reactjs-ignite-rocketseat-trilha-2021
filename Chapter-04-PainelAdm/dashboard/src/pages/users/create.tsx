@@ -23,13 +23,13 @@ export default function Create() {
                         </SimpleGrid>
                         <SimpleGrid minChildWidth="240px" w="100%" spacing="8">
                             <InputComponent name="password" label="Password" />
-                            <InputComponent name="password_confirmation" type="password" label="Password confirmation" />
+                            <InputComponent name="password_confirmation" type="password" label="Confirm password" />
                         </SimpleGrid>
                     </VStack>
                     <Flex mt="8" justify="flex-end">
                         <HStack spacing="4">
                             <Button colorScheme="blackAlpha">Cancelar</Button>
-                            <Button colorScheme="blackAlpha" leftIcon={<Icon as={RiSave2Fill}/>}>Salvar</Button>
+                            <Button colorScheme="blackAlpha" leftIcon={<Icon as={RiSave2Fill} />}>Salvar</Button>
                         </HStack>
                     </Flex>
                 </Box>

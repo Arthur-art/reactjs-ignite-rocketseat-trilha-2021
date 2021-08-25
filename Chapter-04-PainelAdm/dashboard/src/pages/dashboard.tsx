@@ -7,6 +7,7 @@ const Chart = dynamic(() => import('react-apexcharts'), {
     ssr: false
 });
 
+//Configuração dos gráficos
 const options: ApexOptions = {
     chart: {
         //Removendo o menu dasboard
@@ -37,7 +38,7 @@ const options: ApexOptions = {
         axisTicks: {
             color: theme.colors.gray[600]
         },
-        //Para cada dado no array data: de series é preciso passar uma categoria, neste caso datas
+        //Para cada valor no array data: de series é preciso passar uma categoria, neste caso datas
         categories: [
 
             "2021-08-24T00:00.00Z",
@@ -56,6 +57,7 @@ const options: ApexOptions = {
     }
 };
 
+//Valores dos gráficos
 const series = [
     { name: "series1", data: [122, 123, 12, 300, 25, 24, 109] }
 ];
@@ -69,7 +71,7 @@ export default function Dashboard() {
 
                 <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
                     <Sidebar />
-                    {/**SimpleGrid, component do chakra.ui para habilita uso de css grid
+                    {/**SimpleGrid, component do chakra.ui para habilitar o uso de css grid
                      * minChildWidth: Todos os itens dentro do grid devem ter no minimo 320px                                                  
                      */}
                     <SimpleGrid flex="1" gap="4" minChildWidth="320px" align="flex-start">

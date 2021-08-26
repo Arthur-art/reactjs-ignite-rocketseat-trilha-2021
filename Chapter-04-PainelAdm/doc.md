@@ -26,3 +26,9 @@ const Chart = dynamic(() => import('react-apexcharts'), {
     ssr: false
 });
 ```
+
+# Trabalhando com react-hook-form
+- yarn add react-hook-form
+# Atualização do react-hook-form
+- const erros = formState.erros
+- register -> {...register("password")}

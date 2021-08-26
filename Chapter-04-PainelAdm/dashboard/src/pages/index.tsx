@@ -16,7 +16,11 @@ export default function SigIn() {
   const { register, handleSubmit, formState } = useForm()
 
   const handleSignIn: SubmitHandler<SignInFormData> = async (value) => {
-    await new Promise(resolve => setTimeout(resolve, 2000))
+    await new Promise((resolve, reject) => {
+      return setTimeout(() => {
+        resolve(true)
+      }, 2000)
+    })
     console.log(value)
   }
 

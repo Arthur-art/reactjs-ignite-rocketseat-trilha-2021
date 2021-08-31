@@ -20,7 +20,7 @@ export function Header() {
     const { onOpen } = useSidebarDrawer()
 
     return (
-        <Flex as="header" w="100%" maxW={1480} h="20" mx="4" px="6" align="center" >
+        <Flex as="header" w="100%" maxW={1900} h="20" mx="4" px="6" align="center" >
 
             {!isWideVersion && <Button variant={"unstyled"} _focus={{ borderColor: "gray.900" }}
                 onClick={onOpen} leftIcon={<Icon as={RiMenuLine} />} />}

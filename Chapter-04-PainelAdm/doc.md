@@ -32,3 +32,10 @@ const Chart = dynamic(() => import('react-apexcharts'), {
 # Atualização do react-hook-form
 - const erros = formState.erros
 - register -> {...register("password")}
+
+# Trabalhando com lib yup para validação de campos no forms
+- https://github.com/jquense/yup
+- yarn add yup
+
+# Instalando a integração do yup com o react-hook-forms
+- yarn add yup @hookform/resolvers

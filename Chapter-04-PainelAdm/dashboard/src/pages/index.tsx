@@ -34,10 +34,10 @@ export default function SigIn() {
         {/**Component Stack para adicionar espaçamentos nos elementos */}
         <Stack spacing="4">
 
-          <InputComponent {...register("email", {required:true})} name={"email"} type="email" label={"E-mail"} />
-          {errors.email && <small>Digite um email!</small>}
-          <InputComponent {...register("password", {required:true})} name={"password"} type="password" label={"Password"} />
-          {errors.password && <small>Digite uma senha!</small>}
+          <InputComponent errors={errors.email} {...register("email", {required:"Digite um E-mail válido!"})} name={"email"} type="email" label={"E-mail"} />
+         
+          <InputComponent errors={errors.password} {...register("password", {required:"Digite uma senha válida!"})} name={"password"} type="password" label={"Password"} />
+         
         </Stack>
         {/**formState.isSubmitting observa o estado do forms e retorna um booleano */}
         <Button isLoading={formState.isSubmitting} type="submit" mt="6" colorScheme="blackAlpha">Entrar</Button>

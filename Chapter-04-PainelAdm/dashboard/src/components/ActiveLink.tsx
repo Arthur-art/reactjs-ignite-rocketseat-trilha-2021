@@ -1,28 +1,27 @@
-import { cloneElement, ReactElement } from "react";
-import { LinkProps } from "next/link"
-import Link from "next/link"
-import { useRouter } from "next/dist/client/router";
+import { cloneElement, ReactElement } from 'react'
+import Link, { LinkProps } from 'next/link'
+
+import { useRouter } from 'next/dist/client/router'
 
 type ActiveLinkProps = LinkProps & {
-    children: ReactElement;
+  children: ReactElement
 }
 
 export function ActiveLink({ children, ...rest }: ActiveLinkProps) {
+  let isActive = false
 
-    let isActive = false;
+  const { asPath } = useRouter()
 
-    const { asPath } = useRouter();
+  if (asPath === rest.href) {
+    isActive = true
+  }
 
-    if (asPath === rest.href) {
-        isActive = true;
-    }
-
-    return (
-        //cloneElement clona o primeiro elemento dentro do Link para modificar alguma coisa dele
-        <Link {...rest}>
-            {cloneElement(children, {
-                color: isActive ? "red.700" : "gray.50"
-            })}
-        </Link>
-    )
+  return (
+    // cloneElement clona o primeiro elemento dentro do Link para modificar alguma coisa dele
+    <Link {...rest}>
+      {cloneElement(children, {
+        color: isActive ? 'red.700' : 'gray.50',
+      })}
+    </Link>
+  )
 }
